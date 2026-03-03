@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/estilos-entrega-1.css">
+    <title>LOGIN</title>
+</head>
+
+<body>
+    <!-------------------- HEADER -------------------->
+    <header>
+        <nav class="navegador">
+            <!-- LOGO -->
+            <div class="contenedor-logo">
+                <a class="a-activo" href="../index.html">
+                    <span class="nav-logo material-symbols-outlined">
+                        shopping_bag_speed
+                    </span>
+                </a>
+            </div>
+            <!-- BUSCADOR -->
+            <div class="nav-contenedor-buscador">
+                <input class="nav-buscador" type="text" placeholder="Buscar productos">
+            </div>
+            <!-- LOGIN USER -->
+            <div class="login-user">
+                <a href="login.html">
+                    <span class="nav-usuario material-symbols-outlined">
+                        account_circle
+                    </span>
+                </a>
+            </div>
+            <!-- TITULO H1 OCULTO PERO SIRVE PARA LAS BUSQUEDAS -->
+            <div class="nav-titulo-h1">
+                <h1>Mercado Argentino</h1>
+            </div>
+            <!-- OPCIONES -->
+            <div class="nav-opciones">
+                <ul>
+                    <li><a class="nav-a" href="../index.html">Todos los Productos</a></li>
+                    <li><a class="nav-a" href="ofertas.html">Ofertas</a></li>
+                    <li><a class="nav-a" href="ayuda.html">Ayuda</a></li>
+                </ul>
+            </div>
+            <!-- NOTIFICACIONES, FAVORITOS Y CARRITO -->
+            <div class="nav-funciones">
+                <a href="notificaciones.html" class="nav-notificaciones">
+                    <span class="material-symbols-outlined">
+                        notifications
+                    </span>
+                </a>
+                <a href="favoritos.html" class="nav-favoritos">
+                    <span class="material-symbols-outlined">
+                        favorite
+                    </span>
+                </a>
+                <a class="a-activo" href="carrito.html">
+                    <span class="nav-carrito material-symbols-outlined">
+                        shopping_cart
+                    </span>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <!-------------------- MAIN -------------------->
+    <main>
+        <h2 class="main-h2 text-center">Iniciar sesión</h2>
+        <hr>
+        <section class="container py-4 d-flex justify-content-center">
+
+            <div class="card shadow-sm" style="max-width: 420px; width: 100%;">
+                <div class="card-body">
+
+                    <p class="text-center mb-4">
+                        Ingresá a tu cuenta para continuar
+                    </p>
+
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Correo electrónico</label>
+                            <input type="email" class="form-control" placeholder="nombre@email.com">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" placeholder="••••••••">
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <div>
+                                <input type="checkbox" class="form-check-input" id="recordar">
+                                <label class="form-check-label ms-1" for="recordar">Recordarme</label>
+                            </div>
+                            <a href="#" class="small">¿Olvidaste tu contraseña?</a>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary w-100 mb-3">
+                            Iniciar sesión
+                        </button>
+                    </form>
+
+                    <div class="text-center text-muted mb-3">o</div>
+
+                    <button class="btn btn-outline-dark w-100 d-flex align-items-center justify-content-center gap-2">
+                        <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google"
+                            width="18" height="18">
+                        Continuar con Google
+                    </button>
+
+                    <p class="text-center mt-4 mb-0 small">
+                        ¿No tenés cuenta? <a href="#">Registrate</a>
+                    </p>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-------------------- FOOTER -------------------->
+    <footer>
+        <div class="pie-de-pagina">
+            <div>
+                <h3>Acerca de</h3>
+                <ul>
+                    <li><a href="acerca-de.html">Mercado Argentino</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Ayuda</h3>
+                <ul>
+                    <li><a href="ayuda.html">Compra</a></li>
+                    <li><a href="ayuda.html">Venta</a></li>
+                    <li><a href="ayuda.html">Resolución de problemas</a></li>
+                    <li><a href="ayuda.html">Centro de seguridad</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Redes Sociales</h3>
+                <ul>
+                    <li><a href="https://x.com" target="_blank" rel="noopener noreferrer">X</a></li>
+                    <li><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                    <li><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                    <li><a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">Youtube</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Mercado Argentino</h3>
+                <ul>
+                    <li><a href="trabaja-con-nosotros.html">Trabajá con nosotros</a></li>
+                    <li><a href="libro-de-quejas.html">Libro de quejas</a></li>
+                    <li><a href="terminos-y-condiciones.html">Términos y condiciones</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-nombre">Entrega N°1 Fernando Martín Saul</div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

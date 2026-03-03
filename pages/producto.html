@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/estilos-entrega-1.css">
+    <title>PRODUCTO</title>
+</head>
+
+<body>
+    <!-------------------- HEADER -------------------->
+    <header>
+        <nav class="navegador">
+            <!-- LOGO -->
+            <div class="contenedor-logo">
+                <a class="a-activo" href="../index.html">
+                    <span class="nav-logo material-symbols-outlined">
+                        shopping_bag_speed
+                    </span>
+                </a>
+            </div>
+            <!-- BUSCADOR -->
+            <div class="nav-contenedor-buscador">
+                <input class="nav-buscador" type="text" placeholder="Buscar productos">
+            </div>
+            <!-- LOGIN USER -->
+            <div class="login-user">
+                <a href="login.html">
+                    <span class="nav-usuario material-symbols-outlined">
+                        account_circle
+                    </span>
+                </a>
+            </div>
+            <!-- TITULO H1 OCULTO PERO SIRVE PARA LAS BUSQUEDAS -->
+            <div class="nav-titulo-h1">
+                <h1>Mercado Argentino</h1>
+            </div>
+            <!-- OPCIONES -->
+            <div class="nav-opciones">
+                <ul>
+                    <li><a class="nav-a" href="../index.html">Todos los Productos</a></li>
+                    <li><a class="nav-a" href="ofertas.html">Ofertas</a></li>
+                    <li><a class="nav-a" href="ayuda.html">Ayuda</a></li>
+                </ul>
+            </div>
+            <!-- NOTIFICACIONES, FAVORITOS Y CARRITO -->
+            <div class="nav-funciones">
+                <a href="notificaciones.html" class="nav-notificaciones">
+                    <span class="material-symbols-outlined">
+                        notifications
+                    </span>
+                </a>
+                <a href="favoritos.html" class="nav-favoritos">
+                    <span class="material-symbols-outlined">
+                        favorite
+                    </span>
+                </a>
+                <a class="a-activo" href="carrito.html">
+                    <span class="nav-carrito material-symbols-outlined">
+                        shopping_cart
+                    </span>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <!-------------------- MAIN -------------------->
+    <main>
+        <div class="contenedor-producto">
+            <div class="fotos-precio-producto">
+                <section class="producto-carrusel">
+                    <img src="https://picsum.photos/100/100" alt="">
+                    <img src="https://picsum.photos/100/100" alt="">
+                    <img src="https://picsum.photos/100/100" alt="">
+                    <img src="https://picsum.photos/100/100" alt="">
+                    <img src="https://picsum.photos/100/100" alt="">
+                </section>
+                <section>
+                    <img class="imagen-principal" src="https://picsum.photos/300/300" alt="">
+                    <div class="img-carrusel-mobile">
+                        <div id="carouselExample" class="carousel slide">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="https://picsum.photos/300/300" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://picsum.photos/299/300" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://picsum.photos/298/300" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="producto-compra">
+                        <h3>Nombre del Producto</h3>
+                        <div class="producto-precio">$ 50.000</div>
+                        <div class="cuotas-card">3 cuotas sin interes</div>
+                        <div class="carrito-cupon-texto">Ver los medios de pago</div>
+                        <div class="envio-producto">Envío gratis</div>
+                        <div class="producto-stock">Stock disponible</div>
+                        <div class="centrar-ico">Cantidad: <span> 1 Unidad </span>
+                            <span class=" material-symbols-outlined">
+                                arrow_drop_down_circle
+                            </span>
+                        </div>
+                        <button type="button" class="btn-comprar btn btn-warning">Comprar</button>
+                        <button type="button" class="btn btn-carrito">Agregar al carrito</button>
+                    </div>
+                </section>
+            </div>
+            <div class="descripcion-opiniones">
+                <section>
+                    <div class="descripcion">
+                        <h3>Descripcion</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, quaerat! Harum dicta
+                            eius maxime praesentium magni pariatur doloribus cumque a suscipit? Nobis incidunt pariatur
+                            fugit perspiciatis a iste soluta cumque.</p>
+                    </div>
+                </section>
+                <section>
+                    <div class="opiniones">
+                        <h3>Opiniones del producto</h3>
+                        <div class="opinion-display">
+                            <div class="calificacion-numero">4.0</div>
+                            <div class="calificacion-estrellas">
+                                <span class="color-estrella material-symbols-outlined">
+                                    star
+                                </span>
+                                <span class="color-estrella material-symbols-outlined">
+                                    star
+                                </span>
+                                <span class="color-estrella material-symbols-outlined">
+                                    star
+                                </span>
+                                <span class="color-estrella material-symbols-outlined">
+                                    star
+                                </span>
+                                <span class="material-symbols-outlined">
+                                    star
+                                </span>
+                                <div class="calificacion-cantidad">700 calificaciones</div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </section>
+            </div>
+
+        </div>
+    </main>
+    <!-------------------- FOOTER -------------------->
+    <footer>
+        <div class="pie-de-pagina">
+            <div>
+                <h3>Acerca de</h3>
+                <ul>
+                    <li><a href="acerca-de.html">Mercado Argentino</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Ayuda</h3>
+                <ul>
+                    <li><a href="ayuda.html">Compra</a></li>
+                    <li><a href="ayuda.html">Venta</a></li>
+                    <li><a href="ayuda.html">Resolución de problemas</a></li>
+                    <li><a href="ayuda.html">Centro de seguridad</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Redes Sociales</h3>
+                <ul>
+                    <li><a href="https://x.com" target="_blank" rel="noopener noreferrer">X</a></li>
+                    <li><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                    <li><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                    <li><a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">Youtube</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Mercado Argentino</h3>
+                <ul>
+                    <li><a href="trabaja-con-nosotros.html">Trabajá con nosotros</a></li>
+                    <li><a href="libro-de-quejas.html">Libro de quejas</a></li>
+                    <li><a href="terminos-y-condiciones.html">Términos y condiciones</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-nombre">Entrega N°1 Fernando Martín Saul</div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
