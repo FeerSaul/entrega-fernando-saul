@@ -276,7 +276,7 @@ footer {
   text-align: center;
 }
 
-.pie-de-pagina > div {
+.pie-de-pagina>div {
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -553,7 +553,7 @@ footer {
   color: #444;
 }
 
-.ayuda-seccion + .ayuda-seccion {
+.ayuda-seccion+.ayuda-seccion {
   margin-top: 12px;
 }
 
@@ -572,13 +572,13 @@ footer {
 
 .img-favoritos {
   width: 100%;
-  min-width: 120px;
+  min-width: 100px;
   height: auto;
 }
 
 .img-carrito {
   width: 100%;
-  min-width: 120px;
+  min-width: 100px;
   height: auto;
 }
 
@@ -667,10 +667,24 @@ footer {
 }
 
 /* -------- 576px -------- */
-/* ESTE BLOQUE ES EXACTAMENTE EL TUYO, SIN MODIFICAR */
 @media (max-width: 576px) {
 
+  /* .carrito-card {
+    flex-direction: column;
+  }
+
+  .img-carrito {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .datos-producto-carrito {
+    padding: 10px 0;
+  } */
+
+
   .resumen-compra {
+    height: 324px;
     min-width: 50px;
     background-color: #ffffff;
     border: 2px solid #dfe6ed;
