@@ -669,20 +669,6 @@ footer {
 /* -------- 576px -------- */
 @media (max-width: 576px) {
 
-  /* .carrito-card {
-    flex-direction: column;
-  }
-
-  .img-carrito {
-    width: 100%;
-    min-width: 0;
-  }
-
-  .datos-producto-carrito {
-    padding: 10px 0;
-  } */
-
-
   .resumen-compra {
     height: 324px;
     min-width: 50px;
