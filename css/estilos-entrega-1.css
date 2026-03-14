@@ -313,6 +313,10 @@ footer {
   margin: 10px 0px;
 }
 
+.img-carrito {
+  max-width: 300px;
+}
+
 .datos-producto-carrito {
   box-sizing: border-box;
   padding: 10px;
@@ -549,6 +553,7 @@ footer {
 .img-favoritos {
   width: 100%;
   min-width: 100px;
+  max-width: 300px;
   height: auto;
 }
 
