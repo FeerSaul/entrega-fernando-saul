@@ -1,0 +1,53 @@
+/* =========================================================
+   CARDS (Home / Ofertas)
+========================================================= */
+
+@use "../utilities/variables.scss" as *;
+@use "../utilities/mixin.scss" as *;
+
+.contenedor-main-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-items: center;
+    gap: 10px;
+    box-sizing: border-box;
+    padding: 20px 10px;
+}
+
+.main-cards {
+    width: 100%;
+    min-height: 300px;
+    height: auto;
+    background-color: $color-blanco;
+    @include border($color-border);
+    box-sizing: border-box;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.img-card {
+    width: 100% !important;
+}
+
+.titulo-card {
+    margin: 10px 0px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.precio-card {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.cuotas-card {
+    color: $color-verde;
+}
+
+.envio-card {
+    color: $color-verde;
+    font-weight: 700;
+    margin: 20px 0px;
+}

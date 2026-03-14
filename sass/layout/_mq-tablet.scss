@@ -1,0 +1,22 @@
+@use "../utilities/variables.scss" as *;
+@use "../utilities/mixin.scss" as *;
+
+/* =========================================================
+   MEDIA QUERIES (ORIGINALES)
+========================================================= */
+
+/* -------- 992px -------- */
+@media (max-width: 992px) {
+
+    .fotos-precio-producto {
+        @include foto-precio-producto(350px)
+    }
+}
+
+/* -------- 768px -------- */
+@media (max-width: 768px) {
+
+    .fotos-precio-producto {
+        @include foto-precio-producto(200px)
+    }
+}

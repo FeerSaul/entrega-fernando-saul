@@ -1,0 +1,109 @@
+@use "../utilities/variables.scss" as *;
+@use "../utilities/mixin.scss" as *;
+
+
+
+
+/* -------- 576px -------- */
+@media (max-width: 576px) {
+
+  body {
+    padding-bottom: 80px;
+  }
+
+  body.menu-mobile-activo {
+    padding-bottom: 80px;
+  }
+
+  .navegador {
+    grid-template-columns: 1fr 50px;
+  }
+
+  .nav-logo,
+  .login-user,
+  .nav-usuario,
+  .nav-titulo-h1,
+  .nav-favoritos,
+  .nav-carrito,
+  .imagen-principal,
+  hr,
+  .main-h2 {
+    display: none;
+  }
+
+  .nav-contenedor-buscador {
+    grid-row: 1;
+    padding-left: 10px;
+  }
+
+  .nav-opciones {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    padding-left: 10px;
+  }
+
+  .nav-funciones {
+    grid-row: 1;
+    grid-column: 2;
+    gap: 0;
+  }
+
+  .main-contenedor-filtros {
+    margin-bottom: 0;
+    padding: 10px;
+  }
+
+  .contenedor-main-cards {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .contenedor-carrito {
+    grid-template-columns: 1fr;
+  }
+
+  .datos-producto-carrito {
+    padding: 0 10px;
+  }
+
+  .ayuda-seccion {
+    padding: 14px;
+    border-radius: 10px;
+  }
+
+  .ayuda-seccion h3 {
+    font-size: 1.05rem;
+  }
+
+  .ayuda-seccion p {
+    font-size: 0.9rem;
+  }
+
+  .fotos-precio-producto {
+    grid-template-columns: 1fr;
+  }
+
+  .producto-carrusel {
+    display: none;
+  }
+
+  .img-carrusel-mobile {
+    display: contents;
+  }
+
+  .descripcion-opiniones {
+    grid-template-columns: 1fr;
+  }
+
+  .descripcion-opiniones section:first-child {
+    order: 2;
+  }
+
+  .descripcion-opiniones section:last-child {
+    order: 1;
+  }
+
+  .menu-mobile {
+    display: flex;
+  }
+
+}

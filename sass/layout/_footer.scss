@@ -1,0 +1,55 @@
+@use "../utilities/variables.scss" as *;
+@use "../utilities/mixin.scss" as *;
+
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.pie-de-pagina {
+    font-size: 14px;
+    margin: 0 auto;
+    background-color: $color-footer;
+    max-width: 1200px;
+    height: 200px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    padding: 20px 10px;
+    box-sizing: border-box;
+
+    div {
+        @include flex-dir-column(8px);
+    }
+
+    h3 {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 6px;
+        color: #1f2a33;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        font-size: 13px;
+        color: $color-h3-footer;
+        cursor: pointer;
+        transition: opacity 0.2s ease;
+    }
+
+    li:hover {
+        opacity: 0.7;
+    }
+}
+
+.footer-nombre {
+    text-align: center;
+    font-size: 12px;
+    padding: 10px 0;
+    color: $color-nombre;
+}

@@ -1,0 +1,85 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixin" as *;
+
+// Header NAV
+
+/* =========================================================
+   HEADER / NAV
+========================================================= */
+
+.navegador {
+    margin: 0 auto;
+    background-color: $color-principal;
+    max-width: 1200px;
+    height: 100px;
+    @include grid-center;
+    grid-template-columns: 200px 1fr 150px;
+}
+
+.nav-logo {
+    font-size: 50px;
+    color: $color-secundario;
+}
+
+.nav-contenedor-buscador {
+    width: 100%;
+}
+
+.nav-buscador {
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+}
+
+.nav-usuario {
+    font-size: 40px;
+    color: $color-blanco;
+}
+
+.nav-titulo-h1 {
+    font-size: 8px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.nav-opciones {
+    grid-column: 2;
+    justify-self: start;
+}
+
+.nav-opciones ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+}
+
+.nav-opciones li {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.nav-a {
+    color: $color-negro;
+}
+
+.nav-funciones {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-notificaciones {
+    color: $color-secundario;
+}
+
+.nav-favoritos {
+    color: $color-delete;
+}
+
+.nav-carrito {
+    color: $color-ico-carrito;
+}
+

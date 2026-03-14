@@ -1,7 +1,7 @@
+@charset "UTF-8";
 /* =========================================================
    RESET BASE (Anular cambios Bootstrap)
 ========================================================= */
-
 html,
 body {
   font-family: inherit;
@@ -41,13 +41,8 @@ a {
 /* =========================================================
    BASE GLOBAL
 ========================================================= */
-
 .material-symbols-outlined {
-  font-variation-settings:
-    "FILL" 1,
-    "wght" 400,
-    "GRAD" 0,
-    "opsz" 24;
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
 }
 
 body {
@@ -59,7 +54,6 @@ body {
 }
 
 a {
-  text-decoration: none;
   color: #000000;
 }
 
@@ -91,16 +85,15 @@ footer {
 /* =========================================================
    HEADER / NAV
 ========================================================= */
-
 .navegador {
   margin: 0 auto;
   background-color: #6cace4;
   max-width: 1200px;
   height: 100px;
   display: grid;
-  grid-template-columns: 200px 1fr 150px;
   justify-items: center;
   align-items: center;
+  grid-template-columns: 200px 1fr 150px;
 }
 
 .nav-logo {
@@ -173,7 +166,6 @@ footer {
 /* =========================================================
    MAIN GENERAL
 ========================================================= */
-
 .main-h2 {
   font-size: 30px;
   margin: 0;
@@ -207,7 +199,6 @@ footer {
 /* =========================================================
    CARDS (Home / Ofertas)
 ========================================================= */
-
 .contenedor-main-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -258,7 +249,6 @@ footer {
 /* =========================================================
    FOOTER
 ========================================================= */
-
 .pie-de-pagina {
   font-size: 14px;
   margin: 0 auto;
@@ -271,41 +261,33 @@ footer {
   padding: 20px 10px;
   box-sizing: border-box;
 }
-
-.footer-nombre {
-  text-align: center;
-}
-
-.pie-de-pagina>div {
+.pie-de-pagina div {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
-
 .pie-de-pagina h3 {
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 6px;
   color: #1f2a33;
 }
-
 .pie-de-pagina ul {
   margin: 0;
   padding: 0;
 }
-
 .pie-de-pagina li {
   font-size: 13px;
   color: #3a4a57;
   cursor: pointer;
   transition: opacity 0.2s ease;
 }
-
 .pie-de-pagina li:hover {
   opacity: 0.7;
 }
 
 .footer-nombre {
+  text-align: center;
   font-size: 12px;
   padding: 10px 0;
   color: #4b5c68;
@@ -314,7 +296,6 @@ footer {
 /* =========================================================
    PÁGINA CARRITO
 ========================================================= */
-
 .contenedor-carrito {
   display: grid;
   grid-template-columns: 1fr 300px;
@@ -362,7 +343,7 @@ footer {
 .carrito-cupon {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
 }
 
 .carrito-cupon-texto {
@@ -392,7 +373,6 @@ footer {
 /* =========================================================
    PÁGINA PRODUCTO
 ========================================================= */
-
 .contenedor-producto {
   box-sizing: border-box;
   padding: 20px 10px;
@@ -416,7 +396,7 @@ footer {
   height: auto;
   max-height: 540px;
   object-fit: contain;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .img-carrusel-mobile {
@@ -512,7 +492,7 @@ footer {
   color: #f7c325;
   font-size: 40px;
   font-weight: 600;
-  grid-row: 1 / 3;
+  grid-row: 1/3;
   grid-column: 1;
 }
 
@@ -531,9 +511,8 @@ footer {
 }
 
 /* =========================================================
-   AYUDA / TÉRMINOS
+   AYUDA / TÉRMINOS / ACERCA DE
 ========================================================= */
-
 .ayuda-seccion {
   max-width: 900px;
   margin: 0 auto 24px auto;
@@ -541,26 +520,23 @@ footer {
   border-radius: 12px;
   background-color: #f8f9fa;
 }
-
 .ayuda-seccion h3 {
   font-size: 1.2rem;
   margin-bottom: 8px;
 }
-
 .ayuda-seccion p {
   font-size: 0.95rem;
   line-height: 1.5;
   color: #444;
 }
 
-.ayuda-seccion+.ayuda-seccion {
+.ayuda-seccion + .ayuda-seccion {
   margin-top: 12px;
 }
 
 /* =========================================================
    FAVORITOS
 ========================================================= */
-
 .contenedor-favoritos {
   max-width: 900px;
   margin: 0 auto;
@@ -585,7 +561,6 @@ footer {
 /* =========================================================
    MENU MOBILE FIJO
 ========================================================= */
-
 .menu-mobile {
   position: fixed;
   bottom: 0;
@@ -621,7 +596,6 @@ footer {
 /* =========================================================
    MENU MAS (OFFCANVAS)
 ========================================================= */
-
 .menu-mas-links {
   display: flex;
   flex-direction: column;
@@ -643,253 +617,102 @@ footer {
 /* =========================================================
    MEDIA QUERIES (ORIGINALES)
 ========================================================= */
-
 /* -------- 992px -------- */
 @media (max-width: 992px) {
-
   .fotos-precio-producto {
     display: grid;
     grid-template-columns: 70px 1fr 350px;
     gap: 10px;
   }
-
 }
-
 /* -------- 768px -------- */
 @media (max-width: 768px) {
-
   .fotos-precio-producto {
     display: grid;
     grid-template-columns: 70px 1fr 200px;
     gap: 10px;
   }
-
 }
-
 /* -------- 576px -------- */
 @media (max-width: 576px) {
-
-  .resumen-compra {
-    height: 324px;
-    min-width: 50px;
-    background-color: #ffffff;
-    border: 2px solid #dfe6ed;
-    box-sizing: border-box;
-    padding: 10px;
-    margin: 10px 0px;
-  }
-
-  body.menu-mobile-activo {
-    padding-bottom: 80px;
-  }
-
-  .navegador {
-    margin: 0 auto;
-    background-color: #6cace4;
-    max-width: 1200px;
-    height: 100px;
-    display: grid;
-    grid-template-columns: 1fr 50px;
-    justify-items: center;
-    align-items: center;
-  }
-
-  .nav-logo {
-    display: none;
-  }
-
-  .login-user {
-    display: none;
-  }
-
-  .nav-contenedor-buscador {
-    width: 100%;
-    grid-row: 1;
-    box-sizing: border-box;
-    padding-left: 10px;
-  }
-
-  .nav-buscador {
-    width: 100%;
-    height: 40px;
-    box-sizing: border-box;
-  }
-
-  .nav-usuario {
-    display: none;
-  }
-
-  .nav-titulo-h1 {
-    display: none;
-  }
-
-  .nav-opciones {
-    box-sizing: border-box;
-    padding-left: 10px;
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-    justify-self: start;
-  }
-
-  .nav-opciones ul {
-    display: flex;
-    padding: 0;
-    margin: 0;
-    gap: 20px;
-  }
-
-  .nav-opciones li {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-  }
-
-  .nav-a {
-    color: #000000;
-  }
-
-  .nav-funciones {
-    grid-row: 1;
-    grid-column: 2;
-    gap: 0px;
-  }
-
-  .nav-notificaciones {
-    color: #f7c325;
-    display: flex;
-    align-items: center;
-  }
-
-  .nav-favoritos {
-    display: none;
-    color: #dc3545;
-  }
-
-  .nav-carrito {
-    display: none;
-    color: #494949;
-  }
-
-  .main-h2 {
-    display: none;
-    font-size: 30px;
-    margin: 0;
-    box-sizing: border-box;
-    padding: 20px;
-  }
-
-  hr {
-    display: none;
-  }
-
-  .main-contenedor-filtros {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: end;
-    align-items: center;
-    margin-bottom: 0px;
-    box-sizing: border-box;
-    padding: 10px;
-  }
-
-  .contenedor-main-cards {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  }
-
-  .contenedor-favoritos {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 10px 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .datos-producto-carrito {
-    box-sizing: border-box;
-    padding: 0px 10px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .contenedor-carrito {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
-    box-sizing: border-box;
-    padding: 10px 10px;
-  }
-
-  .ayuda-seccion {
-    padding: 14px 14px;
-    border-radius: 10px;
-  }
-
-  .ayuda-seccion h3 {
-    font-size: 1.05rem;
-  }
-
-  .ayuda-seccion p {
-    font-size: 0.9rem;
-  }
-
-  .fotos-precio-producto {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
-  }
-
-  .producto-carrusel {
-    display: none;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .imagen-principal {
-    display: none;
-    width: 100%;
-    min-width: 280px;
-    height: auto;
-    max-height: 540px;
-    object-fit: contain;
-    background-color: #fff;
-  }
-
-  .img-carrusel-mobile {
-    display: contents;
-  }
-
-  .producto-compra {
-    height: 100%;
-    min-width: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    gap: 10px;
-    border: 2px solid #dfe6ed;
-    box-sizing: border-box;
-    padding: 10px;
-  }
-
-  .descripcion-opiniones {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
-  }
-
-  .descripcion-opiniones section:first-child {
-    order: 2;
-  }
-
-  .descripcion-opiniones section:last-child {
-    order: 1;
-  }
-
-  .menu-mobile {
-    display: flex;
-  }
-
   body {
     padding-bottom: 80px;
   }
+  body.menu-mobile-activo {
+    padding-bottom: 80px;
+  }
+  .navegador {
+    grid-template-columns: 1fr 50px;
+  }
+  .nav-logo,
+  .login-user,
+  .nav-usuario,
+  .nav-titulo-h1,
+  .nav-favoritos,
+  .nav-carrito,
+  .imagen-principal,
+  hr,
+  .main-h2 {
+    display: none;
+  }
+  .nav-contenedor-buscador {
+    grid-row: 1;
+    padding-left: 10px;
+  }
+  .nav-opciones {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    padding-left: 10px;
+  }
+  .nav-funciones {
+    grid-row: 1;
+    grid-column: 2;
+    gap: 0;
+  }
+  .main-contenedor-filtros {
+    margin-bottom: 0;
+    padding: 10px;
+  }
+  .contenedor-main-cards {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  .contenedor-carrito {
+    grid-template-columns: 1fr;
+  }
+  .datos-producto-carrito {
+    padding: 0 10px;
+  }
+  .ayuda-seccion {
+    padding: 14px;
+    border-radius: 10px;
+  }
+  .ayuda-seccion h3 {
+    font-size: 1.05rem;
+  }
+  .ayuda-seccion p {
+    font-size: 0.9rem;
+  }
+  .fotos-precio-producto {
+    grid-template-columns: 1fr;
+  }
+  .producto-carrusel {
+    display: none;
+  }
+  .img-carrusel-mobile {
+    display: contents;
+  }
+  .descripcion-opiniones {
+    grid-template-columns: 1fr;
+  }
+  .descripcion-opiniones section:first-child {
+    order: 2;
+  }
+  .descripcion-opiniones section:last-child {
+    order: 1;
+  }
+  .menu-mobile {
+    display: flex;
+  }
 }
+
+/*# sourceMappingURL=estilos-entrega-1.css.map */

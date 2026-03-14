@@ -1,0 +1,21 @@
+@mixin grid-center {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+@mixin flex-dir-column($gap) {
+    display: flex;
+    flex-direction: column;
+    gap: $gap;
+}
+
+@mixin border ($color) {
+    border: 2px solid $color;
+}
+
+@mixin foto-precio-producto($column3) {
+    display: grid;
+    grid-template-columns: 70px 1fr $column3;
+    gap: 10px;
+}

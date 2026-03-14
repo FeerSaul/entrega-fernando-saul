@@ -1,0 +1,30 @@
+@use "../utilities/variables.scss" as *;
+@use "../utilities/mixin.scss" as *;
+
+
+/* =========================================================
+   AYUDA / TÉRMINOS / ACERCA DE
+========================================================= */
+
+.ayuda-seccion {
+    max-width: 900px;
+    margin: 0 auto 24px auto;
+    padding: 16px 20px;
+    border-radius: 12px;
+    background-color: $color-ayuda;
+
+    h3 {
+        font-size: 1.2rem;
+        margin-bottom: 8px;
+    }
+
+    p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+        color: $color-ayuda-seccion;
+    }
+}
+
+.ayuda-seccion+.ayuda-seccion {
+    margin-top: 12px;
+}

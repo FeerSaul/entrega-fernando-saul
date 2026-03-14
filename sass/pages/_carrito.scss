@@ -1,0 +1,78 @@
+@use "../utilities/variables.scss" as *;
+@use "../utilities/mixin.scss" as *;
+
+/* =========================================================
+   PÁGINA CARRITO
+========================================================= */
+
+.contenedor-carrito {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 10px;
+    box-sizing: border-box;
+    padding: 10px 10px;
+}
+
+.carrito-card {
+    background-color: $color-blanco;
+    @include border($color-border);
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    margin: 10px 0px;
+}
+
+.datos-producto-carrito {
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.resumen-compra {
+    height: 324px;
+    min-width: 50px;
+    background-color: $color-blanco;
+    @include border($color-border);
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 10px 0px;
+}
+
+.gasto-productos,
+.gasto-envios,
+.gasto-impuestos,
+.descuento-cupon,
+.carrito-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carrito-cupon {
+    @include flex-dir-column(10px);
+}
+
+.carrito-cupon-texto {
+    color: $color-cupon;
+}
+
+.descuento-cupon {
+    color: $color-verde;
+}
+
+.carrito-total {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.btn-comprar {
+    background-color: $color-secundario;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 20px;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 5px 0px;
+}

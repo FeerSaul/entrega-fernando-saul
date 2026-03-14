@@ -1,0 +1,141 @@
+@use "../utilities/variables.scss" as *;
+@use "../utilities/mixin.scss" as *;
+
+/* =========================================================
+   PÁGINA PRODUCTO
+========================================================= */
+
+.contenedor-producto {
+  box-sizing: border-box;
+  padding: 20px 10px;
+}
+
+.fotos-precio-producto {
+  display: grid;
+  grid-template-columns: 100px 1fr 350px;
+  gap: 10px;
+}
+
+.producto-carrusel {
+  @include flex-dir-column(10px);
+}
+
+.imagen-principal {
+  width: 100%;
+  min-width: 280px;
+  height: auto;
+  max-height: 540px;
+  object-fit: contain;
+  background-color: $color-blanco;
+}
+
+.img-carrusel-mobile {
+  display: none;
+}
+
+.producto-compra {
+  height: 100%;
+  min-width: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 10px;
+  @include border($color-border);
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.producto-precio {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.cuotas-card {
+  color: $color-verde;
+  font-weight: 500;
+}
+
+.carrito-cupon-texto {
+  color: $color-cupon;
+}
+
+.envio-producto {
+  color: $color-verde;
+  font-weight: 700;
+  margin: 20px 0px;
+}
+
+.producto-stock {
+  font-weight: 700;
+}
+
+.centrar-ico {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.btn-carrito {
+  background-color: $color-btn-carrito;
+  color: $color-blanco;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 20px;
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 5px 0px;
+}
+
+.descripcion-opiniones {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 10px;
+}
+
+.descripcion {
+  border: 2px solid #dfe6ed;
+  color: #788896;
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 10px 0px;
+  height: 100%;
+}
+
+.opiniones {
+  border: 2px solid #dfe6ed;
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 10px 0px;
+  height: 100%;
+}
+
+.opinion-display {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  grid-template-rows: 60px 1fr;
+  height: 60px;
+  align-items: center;
+}
+
+.calificacion-numero {
+  color: $color-secundario;
+  font-size: 40px;
+  font-weight: 600;
+  grid-row: 1 / 3;
+  grid-column: 1;
+}
+
+.color-estrella {
+  color: $color-secundario;
+}
+
+.calificacion-estrellas {
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.calificacion-cantidad {
+  grid-row: 2;
+  grid-column: 2;
+}
